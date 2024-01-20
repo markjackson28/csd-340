@@ -1,0 +1,30 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  background-color: #4B5320; 
+  color: #F5F5F5; 
+  border: 1px solid #D6A800; 
+  padding: 10px;
+  font-family: 'Oswald', sans-serif;
+}
+
+#container {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+a {
+  color: #808080; 
+  text-decoration: none;
+}
+
+a:hover {
+  color: #A9A9A9; 
+}
+
+a:visited {
+  color: #696969; 
+}
