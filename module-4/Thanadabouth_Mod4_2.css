@@ -3,8 +3,7 @@
 }
 
 h1 {
-  color: rgba(78, 107, 75, 1); /* A deep military green */
-}
+  color: rgba(78, 107, 75, 1); 
 
 #image-gallery {
   display: grid;
@@ -17,7 +16,7 @@ h1 {
 }
 
 h3 {
-  color: rgba(112, 102, 83, 1); /* A muted brown, typical in Multicam patterns */
+  color: rgba(112, 102, 83, 1); 
   text-align: center;
 }
 
@@ -27,26 +26,24 @@ figure {
 }
 
 figure img {
-  border: 3px solid rgba(112, 102, 83, 1); /* Adding a border to images */
-}
+  border: 3px solid rgba(112, 102, 83, 1); 
 
 figcaption {
   font-style: italic;
   font-size: 0.75em;
-  color: rgba(183, 174, 143, 1); /* A light tan color */
+  color: rgba(183, 174, 143, 1); 
 }
 
-/* Style for the link back to the landing page */
 a[href='../index.html'] {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  color: rgba(78, 107, 75, 1); /* Same color as h1 for consistency */
+  color: rgba(78, 107, 75, 1); 
   text-decoration: none;
   font-weight: bold;
 }
 
-/* Additional styling for hover effect on the link */
+
 a[href='../index.html']:hover {
   text-decoration: underline;
 }
