@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Assignment for CSD 340" />
+    <meta name="keywords" content="HTML, CSS, CSD 340" />
+    <link rel="stylesheet" href="Thanadabouth_Mod9_3.css" />
+    <title>CSD 340 Development with HTML and CSS</title>
+    <script>
+      // Declare the JavaScript variables
+      var firstVariableValue = "Chicago";
+      var secondVariableValue = "Apex";
+      var thirdVariableValue = "freedom";
+      var fourthVariableValue = "development";
+
+      // Function to replace text
+      function replaceText(spanId, variableValue) {
+        document.getElementById(spanId).innerHTML = variableValue;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Assignment 9.3: JavaScript - Part 1</h1>
+      <h2>Chapter 1: HTML</h2>
+      <p class="intro">
+        Hi, my name is Mark, and I am a software developer student at Bellevue
+        University. I was born and raised in
+        <span id="Chicago">_________</span> and moved to Seattle in 2011. I like
+        to be physically active and play
+        <span id="Apex">_________</span> Legends in my free time.
+      </p>
+      <p>
+        My childhood was pretty normal. After graduating high school, I moved to
+        Washington in 2011 because of the military, where I served for Operation
+        Enduring
+        <span id="freedom">_________</span>. Then I pursued a degree in audio
+        engineering.
+      </p>
+      <p>
+        After college, I decided to pursue personal training for about 2.5 years
+        until Covid hit. Most of my clients were developers and thought I would
+        be a great fit in the scene, so I took Covid as a sign to switch career
+        paths. I took a coding bootcamp and am now currently pursuing my BA in
+        software development.
+      </p>
+      <p>
+        At the moment, I am a retail manager alongside being a TA for a coding
+        bootcamp. Hopefully, I will be graduating this year and finding a career
+        in the developer scene. I am excited about the opportunities that await
+        in the field of Software <span id="development">_________</span>.
+      </p>
+      <button
+        type="button"
+        onclick="replaceText('Chicago', firstVariableValue)"
+      >
+        Chicago
+      </button>
+      <button type="button" onclick="replaceText('Apex', secondVariableValue)">
+        Apex
+      </button>
+      <button
+        type="button"
+        onclick="replaceText('freedom', thirdVariableValue)"
+      >
+        Freedom
+      </button>
+      <button
+        type="button"
+        onclick="replaceText('development', fourthVariableValue)"
+      >
+        Development
+      </button>
+      <hr />
+      <address>
+        <p><a href="http://www.bellevue.edu">Bellevue University</a></p>
+        <p>1000 Galvin Road South</p>
+        <p>Bellevue, NE 68005</p>
+      </address>
+    </div>
+    <footer>
+        <a
+          href="../index.html"
+          style="
+            color: #add8e6;
+            font-weight: 400;
+            float: right;
+            padding-right: 10px;
+            font-style: italic;
+          "
+          >Back to portal page</a
+        >
+      </footer>
+  </body>
+</html>
