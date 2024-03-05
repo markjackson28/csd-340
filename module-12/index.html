@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="site.css" />
+    <script>
+      // Array of top ten books
+      const books = [
+        { rank: 1, title: "Meditations by Marcus Aurelius" },
+        { rank: 2, title: "The Art of War by Sun Tzu" },
+        { rank: 3, title: "On War by Carl von Clausewitz" },
+        { rank: 4, title: "Gates of Fire by Steven Pressfield" },
+        { rank: 5, title: "Man's Search for Meaning by Viktor E. Frankl" },
+        { rank: 6, title: "The Warrior Ethos by Steven Pressfield" },
+        { rank: 7, title: "War and Peace by Leo Tolstoy" },
+        { rank: 8, title: "Letters from a Stoic by Seneca" },
+        { rank: 9, title: "Ghost Soldiers by Hampton Sides" },
+        { rank: 10, title: "With the Old Breed by E.B. Sledge" },
+      ];
+
+      // Function to display books in original order (Top to Bottom)
+      function displayOriginalOrder() {
+        const listHTML = books
+          .map((book) => `<div>${book.rank}. ${book.title}</div>`)
+          .join("");
+        document.getElementById("booksList").innerHTML = listHTML;
+      }
+
+      // Function to display books in reverse order (Bottom to Top)
+      function displayReverseOrder() {
+        const listHTML = [...books]
+          .reverse()
+          .map((book) => `<div>${book.rank}. ${book.title}</div>`)
+          .join("");
+        document.getElementById("booksList").innerHTML = listHTML;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Assignment 12.2: JavaScript - Part 4</h1>
+
+      <div class="side-by-side" id="left-div">
+        <div class="content-box">
+          <h3>Top 10 Favorite Books</h3>
+          <!-- Sorting Buttons -->
+          <button onclick="displayOriginalOrder()">Top to Bottom</button>
+          <button onclick="displayReverseOrder()">Bottom to Top</button>
+          <hr />
+          <div id="booksList">
+            <!-- Books -->
+          </div>
+        </div>
+      </div>
+
+      <div class="side-by-side" id="right-div">
+        <div class="content-box">
+          <h3>5 Things I've Learned Since the Course Started</h3>
+          <ul>
+            <li>How to structure web pages using HTML</li>
+            <li>The importance of CSS for styling and layout</li>
+            <li>Responsive web design principles</li>
+            <li>The basics of JavaScript for interactive elements</li>
+            <li>The use of a Web Validator</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="bottom-div">
+        <a href="../../index.html">back to Landing Page</a>
+      </div>
+    </div>
+    <script>
+      displayOriginalOrder();
+    </script>
+  </body>
+</html>
